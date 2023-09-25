@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Quicksand','Poppins',sans-serif;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+header.navbar-container{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-block: 1rem;
+    z-index: 999;
+}
+
+header.navbar-container .logo img{
+    width: 150px;
+    margin: auto;
+}
+
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem 2rem;
+}
+
+header.navbar-container .nav-list li{
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list a{
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: rgb(113, 10, 10);
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a:hover{
+    border-radius: 999px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgb(113, 10, 10);
+}
+
+
+.content{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+main .content .content-description{
+    flex: 1 1;
+}
+
+main .content .content-description .title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+    margin-block: 1rem;
+}
+
+
+main .content .content-description p{
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    letter-spacing: 2%;
+    color: rgb(113, 10, 10);
+}
+
+
+main .content .content-description button {
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: rgb(113, 10, 10);
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+main .content .content-description button a{
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+main .content .content-description button:hover{
+    border: 3px solid rgb(113, 10, 10);
+    color: rgb(113, 10, 10);
+    background-color: transparent;
+}
+
+main .content .content-image {
+    flex: 1;
+    display: flex;
+}
+main .content .content-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+}
+
+
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.flex-container{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-container aside{
+    color: rgb(113, 10, 10);
+    padding: 20px;
+    justify-content: flex-start;
+    transition: all .2s ease-in-out;
+}
+
+.flex-container h1{
+    text-align: center;
+}
+
+.flex-container img{
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.flex-container p{
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 10%;
+}
+
+.flex-container .satu .dua .tiga .empat{
+    width: 25%;
+    height: 50%;
+    font-size: 2rem;
+}
+
+.flex-container .satu:hover,.dua:hover,.tiga:hover,.empat:hover{
+    background-color: rgb(113, 10, 10);
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+article #isi{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    padding-inline: auto;
+    font-weight: 500;
+    color: rgb(113, 10, 10);
+}
+
+article h1{
+    text-transform: uppercase;
+}
+
+article #isi:hover{
+    background-color: rgb(113, 10, 10);
+    color: white;
+    border-radius: 9px;
+}
+
+
+
+aside{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    flex: 1;
+}
+
+aside .social-media{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+}
+
+aside .social-media ul{
+    padding: 1.5rem 1rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: all .3s case-in-out;
+}
+
+aside .social-media li{
+    list-style-type: none;
+    transition: all .1s case-in-out;
+}
+
+aside .social-media li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(113, 10, 10);
+    transition: all .1s case-in-out;
+}
+
+aside .social-media li a:hover{
+    color: white;
+    background-color: rgb(113, 10, 10);
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+}
+/*End of Main Content*/
+
+
+footer{
+    color: rgb(113, 10, 10);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-inline: auto;
+}
+
+footer img{
+    width: 50px;
+    margin: -5px;
+    padding: 0;
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+    header.navbar-container{
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content .content-description .title {
+        font-size: 3rem;
+    }
+    
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+    
+    main .content .content-image {
+        order: -1;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .flex-container .satu{
+        width: 60%;
+        height: 100%;
+    }
+    
+    .flex-container .dua{
+        width: 60%;
+        height: 100%;
+    }
+    
+    .flex-container .tiga{
+        width: 60%;
+        height: 100%;
+    }
+    
+    .flex-container .empat{
+        width: 60%;
+        height: 100%;
+    }
+}

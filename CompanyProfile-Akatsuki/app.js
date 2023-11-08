@@ -360,29 +360,66 @@
 //     { title: 'Harry Potter and the Deathly Hallows', author: 'J.K Rowling', sales: 4475152 },
 // ];
 
-//   // TODO
+// // TODO
 // const greatAuthors = books.filter((book) => book.sales > 1000000).map((book) => {
 //     return `${book.author} adalah penulis buku ${book.title} yang sangat hebat!`;
 // });
 
 // console.log(greatAuthors);
 
-// const motogp = [
-//     { constructor: 'Ducati', driver: 'Pecco', point: 416 },
-//     { constructor: 'KTM', driver: 'Brad Binder', point: 234 },
-//     { constructor: 'Aprilia', driver: 'Aleix', point: 218 },
-//     { constructor: 'Honda', driver: 'Marquez', point: 105 },
-//     { constructor: 'Yamaha', driver: 'Taro', point: 105 },
-// ];
+const motogp = [
+    {
+        constructor: 'Ducati',
+        driver: 'Pecco',
+        point: 416
+    },
+    {
+        constructor: 'KTM',
+        driver: 'Brad Binder',
+        point: 234
+    },
+    {
+        constructor: 'Aprilia',
+        driver: 'Aleix',
+        point: 218
+    },
+    {
+        constructor: 'Honda',
+        driver: 'Marquez',
+        point: 105
+    },
+    {
+        constructor: 'Yamaha',
+        driver: 'Taro',
+        point: 105
+    },
+];
 
-// const winner = motogp.filter((moto) => moto.point > 300).map((moto) => {
-//     return `${moto.constructor} dengan point ${moto.point} adalah juara tahun ini bersama ${moto.driver}`;
-// });
+
+const findPoint = motogp.find((moto) => moto.point === 105);
+console.log(findPoint);
+
+console.log("================================================")
+
+const filterPoint = motogp.filter((motos) => motos.point === 105);
+console.log(filterPoint[1].driver);
+
 
 // const totalPoint = motogp.reduce((acc, moto) => acc + moto.point, 0);
-
 // console.log(totalPoint);
-// console.log(winner);
+
+const winner = motogp.filter((moto) => moto.point > 300).map((moto) => {
+    return `${moto.constructor} dengan point ${moto.point} adalah juara tahun ini bersama ${moto.driver}`;
+});
+console.log(winner);
+
+
+let kendaraan = {
+    nama: "ferarri",
+    warna: "merah",
+
+}
+
 
 // let day = "minggu"
 // day = 'sabtu'
@@ -454,3 +491,50 @@
 
 // console.log(lambuLaluLinta("merah"));
 
+// for (let i = 1; i <= 5; i++) {
+//     let row = '';
+//     for (let j = 1; j <= 5 - i; j++) {
+//         row += ' ';
+//     }
+//     for (let k = 1; k <= 2 * i - 1; k++) {
+//         row += '*';
+//     }
+//     console.log(row);
+// }
+
+// const n = 5; // Ubah nilai n sesuai dengan jumlah baris yang diinginkan
+
+// for (let i = 1; i <= n; i++) {
+//     let row = '';
+//     for (let j = 1; j <= i; j++) {
+//         row += j;
+//     }
+//     console.log(row);
+// }
+
+// for (let i = n - 1; i >= 1; i--) {
+//     let row = '';
+//     for (let j = 1; j <= i; j++) {
+//         row += j;
+//     }
+//     console.log(row);
+// }
+
+// const n = 5; // Ubah nilai n sesuai dengan jumlah baris yang diinginkan
+
+// for (let i = 1; i <= n; i++) {
+//     let row = '';
+//     for (let j = 1; j <= n - i; j++) {
+//         row += ' ';
+//     }
+//     for (let k = 1; k <= 2 * i - 1; k++) {
+//         row += '*';
+//     }
+//     console.log(row);
+// }
+
+// const myArray = [0, 1, 2,];
+// myArray.push(3);
+// myArray.pop();
+
+// console.log(myArray);
